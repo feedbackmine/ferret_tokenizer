@@ -8,9 +8,22 @@
     token = frt_alpha frt_alnum*;
 
     frt_tokenizer := |*
+        #// question_mark 
+        ('?')+ { RET; };
+        #// exclamation_mark
+        ('!')+ { RET; };
+        #// twitter_user
+        '@' (alnum)+  { RET; };
+        #// smile_face 
+        ':' ('-')? (')')+ { RET; };
+        #// angry_face
+        ':' ('-')? ('(')+ { RET; };
+        #// fword
+        alnum+ ('*')+ alnum+ { RET; };
+    
         #// Email
         email { RET; };
-
+        
         #// Token, or token with possessive
         token          { RET; };
         token [\']     { trunc = 1; RET; };

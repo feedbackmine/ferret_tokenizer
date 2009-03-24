@@ -1,9 +1,7 @@
 require 'ext/tokenizer'
 
-t=Tokenizer.new 'this is a test'
-p t.next
-p t.next
-p t.next
-p t.next
-p t.next
-p t.next
+t = Tokenizer.new '@feedbackmine sh*t, I LOVE this!!! so funny:-)'
+while (tok = t.next)
+  p tok
+end
+
