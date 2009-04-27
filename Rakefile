@@ -7,8 +7,8 @@ Hoe.new('ferret_tokenizer', '0.1.1') do |p|
   p.author = 'FeedbackMine'
   p.email = 'feedbackmine@feedbackmine.com'
   p.url = 'http://www.tweetjobsearch.com'
-  p.summary = 'tokenizer'
-  p.description = 'tokenizer'
+  p.summary = 'A string tokenizer based on Ferret::Analysis::StandardAnalyzer.'
+  p.description = 'A string tokenizer based on Ferret::Analysis::StandardAnalyzer.'
   
   p.spec_extras[:extensions] = "ext/extconf.rb"
   p.clean_globs << EXT << "ext/*.o" << "ext/Makefile"

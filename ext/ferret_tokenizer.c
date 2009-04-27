@@ -34,7 +34,7 @@ VALUE method_next(VALUE self) {
 	const char *start = NULL;
   const char *end = NULL;
   int len;
-  
+
   Tokenizer *t;
   Data_Get_Struct(self, Tokenizer, t);
 

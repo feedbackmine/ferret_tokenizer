@@ -8,6 +8,5 @@ ext/scanner.in
 Rakefile
 Manifest.txt
 README.txt
-test
 test/test.rb
 

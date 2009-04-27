@@ -4,12 +4,12 @@ A string tokenizer based on Ferret::Analysis::StandardAnalyzer. I made some impr
 == Install
 
 sudo gem sources -a http://gems.github.com   (you only have to do this once)
-sudo gem install feedbackmine-tokenizer
+sudo gem install feedbackmine-ferret_tokenizer
 
 == Usage
 
-require 'tokenizer'
-t = Tokenizer.new '@feedbackmine, I LOVE this!!! :-)'
+require 'ferret_tokenizer'
+t = FerretTokenizer.new '@feedbackmine, I LOVE this!!! :-)'
 while (tok = t.next)
   p tok
 end
