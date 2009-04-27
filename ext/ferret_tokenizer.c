@@ -59,8 +59,8 @@ VALUE method_initialize(VALUE self, VALUE str) {
 
 VALUE cTokenizer = Qnil;
 
-void Init_tokenizer() {
-	cTokenizer = rb_define_class("Tokenizer", rb_cObject);
+void Init_ferret_tokenizer() {
+	cTokenizer = rb_define_class("FerretTokenizer", rb_cObject);
 	rb_define_alloc_func(cTokenizer, tokenizer_alloc);
 	rb_define_method(cTokenizer, "initialize", method_initialize, 1);
 	rb_define_method(cTokenizer, "next", method_next, 0);

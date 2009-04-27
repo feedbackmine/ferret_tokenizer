@@ -1,3 +1,3 @@
 require 'mkmf'
 $CFLAGS = "#{ENV['CFLAGS']} -Wall -O3 "
-create_makefile('tokenizer')
+create_makefile('ferret_tokenizer')

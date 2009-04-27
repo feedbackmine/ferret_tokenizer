@@ -1,4 +1,4 @@
-ext/tokenizer.c
+ext/ferret_tokenizer.c
 ext/scanner.rl
 ext/url.rl
 ext/extconf.rb
