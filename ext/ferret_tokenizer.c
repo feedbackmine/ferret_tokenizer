@@ -50,7 +50,7 @@ VALUE method_next(VALUE self) {
 }
 
 VALUE method_initialize(VALUE self, VALUE str) {
-	char* s = RSTRING(str)->ptr;
+	char* s = RSTRING_PTR(str);
 	Tokenizer *t;
   Data_Get_Struct(self, Tokenizer, t);
   t->data = s;
